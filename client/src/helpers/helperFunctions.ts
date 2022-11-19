@@ -4,7 +4,7 @@ const randomTimeForTimeout = (max: number, min: number): number => {
   return (Math.floor(Math.random() * (max - min + 1)) + min) * 1000;
 };
 
-const randomLeftOrRight = () => {
+const randomLeftOrRight = (): boolean => {
   return Math.random() < 0.5;
 };
 
