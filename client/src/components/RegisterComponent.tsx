@@ -33,7 +33,7 @@ const RegisterComponent = (): JSX.Element => {
     };
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        // console.log(JSON.stringify(response.data));
         navigate('/game', {
           state: {
             id: response.data.id,
